@@ -20,5 +20,5 @@ def main():
         print("The checksums are different")
 
 if __name__ == "__main__":
-    main(parse_arguments())
+    main()   
    
