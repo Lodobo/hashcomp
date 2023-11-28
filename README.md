@@ -4,7 +4,7 @@ A simple command line tool to check whether some files have the same sha256 chec
 
 ## Usage:
 
-`hashcomp.py [-h] FILE [...]`
+`hashcomp [-h] FILE [...]`
 
 ## install
 
