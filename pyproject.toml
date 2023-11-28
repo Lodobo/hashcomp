@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hashcomp"
+version = "0.1.0"
+description = "A simple command line tool to check whether some files have the same sha256 checksum"
+authors = ["lodobo <lodobo303@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+argparse = "^1.4.0"
+
+[tool.poetry.scripts]
+hashcomp = "hashcomp:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
