@@ -8,7 +8,7 @@ A simple command line tool to check whether some files have the same sha256 chec
 
 ## install
 
-`git clone git@github.com:Lodobo/hashcomp.git`
+`git clone https://github.com/Lodobo/hashcomp`
 
 `cd hashcomp`
 
