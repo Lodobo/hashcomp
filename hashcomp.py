@@ -1,16 +1,16 @@
 import sys, argparse, hashlib
 
 def main():
-    
     parser = argparse.ArgumentParser()
     parser.add_argument("files", metavar="FILE", nargs="+", help="Path to file")
     args = parser.parse_args()
-
     checksums = set()
     
     for file in args.files:
         with open(file, "rb") as f: # "rb" for binary   
-            hexdigest = hashlib.file_digest(f, "sha256").hexdigest()
+            h = hashlib.new("sha256")
+            h.update(f.read())
+            hexdigest = h.hexdigest()
             checksums.add(hexdigest)
             print(hexdigest, file)
     
