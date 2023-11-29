@@ -16,8 +16,10 @@ def main():
     
     if len(checksums) == 1:
         print("All checksums are identical")
+        sys.exit(0)
     else:
         print("The checksums are different")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()   
